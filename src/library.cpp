@@ -14,7 +14,7 @@ void bar(int n){
         std::cout << "n is less than 0!" << std::endl;
     }
     else{
-        std::cout << "n is exactly 0!" << std::endl;
+        stad::cout << "n is exactly 0!" << std::endl;
     }
 }
 

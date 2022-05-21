@@ -18,7 +18,7 @@ namespace gcov_tutorial::tests {
         bar(100);
     }
     TEST(TestBarSuite,TestBarEqualToZero){
-        //bar(0);
+        bar(0);
     }
     TEST(TestBarSuite,TestBarLessThanZero){
         bar(-100);
