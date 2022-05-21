@@ -74,6 +74,11 @@ The generated `lcov` report will be:
 
 
 ## Compiling with GCC
+### On Ubuntu
+Just run
+```
+./build-and-run-cov.sh
+```
 ### On MacOs:
 You can install `gcc` with `home-brew` by running `brew install gcc`.
 
