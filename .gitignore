@@ -1,5 +1,8 @@
 build/*
 cmake*/
 .DS_Store
+*.gcno
+*.gcda
+*.gcov
 .idea/*
 

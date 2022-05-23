@@ -3,10 +3,11 @@
 # Rationale: https://vaneyckt.io/posts/safer_bash_scripts_with_set_euxo_pipefail/
 set -euxo pipefail
 
-# Set up defaults for CC, CXX, GCOV_PATH
+# Set up defaults for CC, CXX, GCOV_PATH,SHOW_COVERAGE
 export CC="${CC:-gcc}"
 export CXX="${CXX:-g++}"
 export GCOV="${GCOV:-gcov}"
+export SHOW_COVERAGE="${SHOW_COVERAGE:-true}"
 
 # Record the base directory
 BASE_DIR=$PWD
@@ -29,15 +30,14 @@ lcov --zerocounters --directory .
 # Run tests
 ./tests/RunTests
 
-echo "GCOV: $GCOV"
 # Create coverage report by taking into account only the files contained in src/
 lcov --capture --directory tests/ -o coverage.info --include "$BASE_DIR/src/*" --gcov-tool "$GCOV"
 
-# Create HTML report in the out/ directory
-genhtml coverage.info --output-directory out
 
-# Show coverage report to the terminal
-lcov --list coverage.info
+if [ "$SHOW_COVERAGE" = "true" ]; then
+    # Create HTML report in the out/ directory
+    genhtml coverage.info --output-directory out
 
-# Open HTML
-open out/index.html
+    # Open HTML
+    open out/index.html
+fi

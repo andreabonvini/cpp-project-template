@@ -13,7 +13,7 @@
       "binaryDir": "${sourceDir}/build",
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "RelWithDebInfo",
-        "CMAKE_CXX_FLAGS": "-fprofile-arcs -ftest-coverage"
+        "CMAKE_CXX_FLAGS": "-fprofile-arcs -ftest-coverage -O0"
       }
     }
   ],
