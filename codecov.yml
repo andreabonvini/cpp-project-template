@@ -3,7 +3,7 @@ coverage: # check here for more info: https://docs.codecov.com/docs/commit-statu
     project:
       default:
         # basic
-        target: 90%
+        target: 100%
         threshold: 0%
         # advanced settings
         branches:

@@ -15,13 +15,13 @@ namespace cpp_project_template::tests {
         foo();
     }
     TEST(TestBarSuite,TestBarGreaterThanZero){
-        // bar(100);
+        bar(100);
     }
     TEST(TestBarSuite,TestBarEqualToZero){
-        // bar(0);
+        bar(0);
     }
     TEST(TestBarSuite,TestBarLessThanZero){
-        // bar(-100);
+        bar(-100);
     }
 }
 
