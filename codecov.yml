@@ -1,21 +1,19 @@
-codecov:
-  require_ci_to_pass: yes
-
 coverage:
-  precision: 2
-  round: down
-  range: "70...100"
-  patch: off
-
-parsers:
-  gcov:
-    branch_detection:
-      conditional: yes
-      loop: yes
-      method: no
-      macro: no
-
-comment:
-  layout: "reach,diff,flags,files,footer"
-  behavior: default
-  require_changes: no
+  status:
+    project:
+      default:
+        # basic
+        target: auto
+        threshold: 90%
+        base: auto
+        flags:
+          - unit
+        paths:
+          - "src"
+        # advanced settings
+        branches:
+          - master
+        if_ci_failed: error #success, failure, error, ignore
+        informational: false
+        only_pulls: false
+      patch: off
