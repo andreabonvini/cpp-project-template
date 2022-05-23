@@ -15,7 +15,7 @@ FetchContent_MakeAvailable(googletest)
 include(GoogleTest)
 enable_testing()
 
-# We define a single executable (RunTests.cpp) that will run all the available tests.
+# We define a single executable (RunTests) that will run all the available tests.
 add_executable(
         RunTests run_tests.cpp
         ../src/library.cpp

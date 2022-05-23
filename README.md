@@ -52,7 +52,7 @@ And our tests are:
 #include <gtest/gtest.h>
 
 
-namespace gcov_tutorial::tests {
+namespace cpp_project_template::tests {
     TEST(TestFooSuite,TestFoo){
         foo();
     }

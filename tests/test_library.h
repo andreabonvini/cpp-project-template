@@ -2,15 +2,15 @@
 // Created by Andrea Bonvini on 20/05/22.
 //
 
-#ifndef GCOV_TUTORIAL_TEST_LIBRARY_H
-#define GCOV_TUTORIAL_TEST_LIBRARY_H
+#ifndef CPP_PROJECT_TEMPLATE_TEST_LIBRARY_H
+#define CPP_PROJECT_TEMPLATE_TEST_LIBRARY_H
 
 #include "../src/library.h"
 
 #include <gtest/gtest.h>
 
 
-namespace gcov_tutorial::tests {
+namespace cpp_project_template::tests {
     TEST(TestFooSuite,TestFoo){
         foo();
     }
@@ -25,4 +25,4 @@ namespace gcov_tutorial::tests {
     }
 }
 
-#endif //GCOV_TUTORIAL_TEST_LIBRARY_H
+#endif //CPP_PROJECT_TEMPLATE_TEST_LIBRARY_H

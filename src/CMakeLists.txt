@@ -1,3 +1,3 @@
 add_library(
-        gcov_tutorial SHARED library.cpp
+        cpp_project_template SHARED library.cpp
 )

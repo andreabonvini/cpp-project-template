@@ -1,8 +1,8 @@
-#ifndef GCOV_TUTORIAL_LIBRARY_H
-#define GCOV_TUTORIAL_LIBRARY_H
+#ifndef CPP_PROJECT_TEMPLATE_LIBRARY_H
+#define CPP_PROJECT_TEMPLATE_LIBRARY_H
 
 void foo();
 void bar(int n);
 void baz();
 
-#endif //GCOV_TUTORIAL_LIBRARY_H
+#endif //CPP_PROJECT_TEMPLATE_LIBRARY_H
