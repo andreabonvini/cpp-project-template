@@ -1,3 +1,4 @@
+![Build](https://github.com/andreabonvini/cpp-project-template/actions/workflows/main.yml/badge.svg)
 [![codecov](https://codecov.io/gh/andreabonvini/cpp-project-template/branch/master/graph/badge.svg?token=P5LVV3JXJL)](https://codecov.io/gh/andreabonvini/cpp-project-template)
 # `CMake` + `GoogleTest` +  `gcov`
 
