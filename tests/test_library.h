@@ -21,7 +21,7 @@ namespace cpp_project_template::tests {
         // bar(0);
     }
     TEST(TestBarSuite,TestBarLessThanZero){
-        bar(-100);
+        // bar(-100);
     }
 }
 
