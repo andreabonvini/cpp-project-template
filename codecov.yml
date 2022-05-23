@@ -1,15 +1,10 @@
-coverage:
+coverage: # check here for more info: https://docs.codecov.com/docs/commit-status
   status:
     project:
       default:
         # basic
-        target: auto
-        threshold: 90%
-        base: auto
-        flags:
-          - unit
-        paths:
-          - "src"
+        target: 90%
+        threshold: 0%
         # advanced settings
         branches:
           - master
