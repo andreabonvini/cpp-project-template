@@ -1,3 +1,4 @@
+[![codecov](https://codecov.io/gh/andreabonvini/cpp-project-template/branch/master/graph/badge.svg?token=P5LVV3JXJL)](https://codecov.io/gh/andreabonvini/cpp-project-template)
 # `CMake` + `GoogleTest` +  `gcov`
 
 This little repo should contain everything you need to know if you want to:
@@ -72,7 +73,17 @@ The generated `lcov` report will be:
 
 ![](docs/images/example_report.png)
 
+## Dependencies
+### `lcov`
+#### Ubuntu
 
+```
+sudo apt update && sudo apt install lcov
+```
+### MacOs
+```
+brew install lcov
+```
 ## Compiling with GCC
 ### On Ubuntu
 Just run
