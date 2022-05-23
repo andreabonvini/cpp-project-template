@@ -25,11 +25,12 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      # Runs a single command using the runners shell
+      - name: Install lcov
+        run: sudo apt update && sudo apt install lcov
+
       - name: Run everything
         run: SHOW_COVERAGE=false ./build-and-run-cov.sh
 
-      # Runs additional commands using the runners shell
       - name: Send converage report to codecov.
         run: bash <(curl -s https://codecov.io/bash) -f build/coverage.info || echo
   # ==================================================================================== 
@@ -42,10 +43,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      # Runs a single command using the runners shell
+      - name: Install lcov
+        run: brew install lcov
+
       - name: Run everything
         run: SHOW_COVERAGE=false ./build-and-run-cov.sh
 
-      # Runs additional commands using the runners shell
       - name: Send converage report to codecov.
         run: bash <(curl -s https://codecov.io/bash) -f build/coverage.info || echo
