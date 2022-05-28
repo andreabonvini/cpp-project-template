@@ -46,7 +46,7 @@ jobs:
       - name: Install lcov
         run: brew install lcov
 
-      - name: Run everything
+      - name: Build project with coverage flags, generte coverage report
         run: SHOW_COVERAGE=false ./build-and-run-cov.sh
 
       - name: Send converage report to codecov.
