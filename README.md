@@ -1,3 +1,4 @@
+
 ![Build](https://github.com/andreabonvini/cpp-project-template/actions/workflows/main.yml/badge.svg)
 [![codecov](https://codecov.io/gh/andreabonvini/cpp-project-template/branch/master/graph/badge.svg?token=P5LVV3JXJL)](https://codecov.io/gh/andreabonvini/cpp-project-template)
 # `CMake` + `GoogleTest` +  `gcov`
@@ -27,7 +28,7 @@ void foo(){
 
 void bar(int n){
     if (n > 0){
-        std::cout << "n is grater than 0!" << std::endl;
+        std::cout << "n is greater than 0!" << std::endl;
     }
     else if (n < 0){
         std::cout << "n is less than 0!" << std::endl;
